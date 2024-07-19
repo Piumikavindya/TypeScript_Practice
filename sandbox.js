@@ -21,3 +21,6 @@ uid = 123;
 // Objects
 var ninjaOne;
 ninjaOne = { name: 'yoshi', age: 30 };
+ninjaOne = []; // this is also valid because array is an object
+var ninjaTwo;
+ninjaTwo = { name: 'mario', age: 20, beltColor: 'black' };

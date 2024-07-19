@@ -33,3 +33,12 @@
 
   let ninjaOne: object;
   ninjaOne = { name: 'yoshi', age: 30};
+  ninjaOne = []; // this is also valid because array is an object
+   
+  let ninjaTwo: {
+    name: string,
+    age: number,
+    beltColor: string
+  }
+
+  ninjaTwo = { name: 'mario', age: 20, beltColor: 'black'};
