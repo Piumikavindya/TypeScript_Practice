@@ -12,3 +12,5 @@ console.log(mixed);
 var ninja; // here not giveing values to properties. here assign any type of data type to name and age
 ninja = { name: 'yoshi', age: 25 };
 console.log(ninja);
+ninja = { name: 25, age: 'yoshi' };
+console.log(ninja);
