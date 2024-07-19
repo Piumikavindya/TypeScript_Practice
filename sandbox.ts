@@ -21,3 +21,15 @@
   mixed.push('hello');
   mixed.push(20);
   mixed.push(false);
+  console.log(mixed);
+
+
+  // can give union type for variable like this
+  let uid: string|number;
+    uid = '123';
+    uid = 123;
+
+  // Objects
+
+  let ninjaOne: object;
+  ninjaOne = { name: 'yoshi', age: 30};

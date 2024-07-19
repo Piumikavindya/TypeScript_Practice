@@ -13,3 +13,11 @@ var mixed = []; // array of strings, numbers and booleans
 mixed.push('hello');
 mixed.push(20);
 mixed.push(false);
+console.log(mixed);
+// can give union type for variable like this
+var uid;
+uid = '123';
+uid = 123;
+// Objects
+var ninjaOne;
+ninjaOne = { name: 'yoshi', age: 30 };
