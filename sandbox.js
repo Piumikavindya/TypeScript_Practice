@@ -8,3 +8,8 @@ age = 30;
 // Arrays
 var ninjas = []; // initailize an empty array of strings
 ninjas.push('piumi'); // add a string to the array
+// Union types
+var mixed = []; // array of strings, numbers and booleans
+mixed.push('hello');
+mixed.push(20);
+mixed.push(false);

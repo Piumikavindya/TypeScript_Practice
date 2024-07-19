@@ -14,3 +14,10 @@
 
   ninjas.push('piumi'); // add a string to the array
 
+
+  // Union types
+
+  let mixed: (string|number|boolean)[] = []; // array of strings, numbers and booleans
+  mixed.push('hello');
+  mixed.push(20);
+  mixed.push(false);
