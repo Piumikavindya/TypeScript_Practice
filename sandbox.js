@@ -4,7 +4,7 @@ var age = 10;
 var isBlackBelt = false;
 // character = 20; // error
 character = 'piumi'; // no error
-// in typescript we cant change the data type of a variable. we can change value but not data type
+// in typescript we can't change the data type of a variable. we can change value but not data type
 // age = 'yoshi'; // error
 age = 40;
 // isBlackBelt = 'yes';
