@@ -4,8 +4,8 @@ This repository contains the materials and code samples from my TypeScript pract
 
 ## Introduction to branches
 
-lesson-2: Compiling TypeScript
-lesson-3: Data Types
-lesson-4: Arrays and Objects
-lesson-5: Explicit Types
-lesson-6: Dynamic Types (any)
+- lesson-2: Compiling TypeScript
+- lesson-3: Data Types
+- lesson-4: Arrays and Objects
+- lesson-5: Explicit Types
+- lesson-6: Dynamic Types (any)
