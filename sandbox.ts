@@ -9,5 +9,11 @@ names[0] = 'peach'; // change the element of array
 
 
 let numbers = [10, 20, 30, 40];
-
 numbers.push(25);
+
+
+// Mixed data type array
+let mixed = ['ken', 4, `chun-li`, 8, 9];
+mixed.push('ryu');
+mixed.push(10);
+mixed[0] = 3;   
