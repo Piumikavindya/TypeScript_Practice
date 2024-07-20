@@ -1,16 +1,8 @@
 "use strict";
-let greet;
-// greet = 'hello'; // Error
-greet = () => {
-    console.log('Hello, world!');
+// we can use this insted of String | Number
+const logDetails = (uid, item) => {
+    console.log(`${item} has a uid of ${uid}`);
 };
-const add = (a, b, c) => {
-    console.log(a + b);
-    console.log(c);
+const greet = (user) => {
+    console.log(`${user.name} says hello`);
 };
-add(5, 10, '20');
-// no required to give return type
-const minus = (a, b) => {
-    return a + b;
-};
-let result = minus(10, 7);

@@ -1,22 +1,11 @@
-let greet: Function;
+type StringOrNum = String | Number;
+// we can use this insted of String | Number
 
-// greet = 'hello'; // Error
-
-greet =() => {
-    console.log('Hello, world!');
+const logDetails = (uid: String | Number, item: String) => {
+    console.log(`${item} has a uid of ${uid}`);
 }
 
-const add = (a: number, b: number, c?: number | string) =>{
-    console.log(a + b);
-    console.log(c);
+const greet = (user: { name: String, uid: StringOrNum }) => {
+    console.log(`${user.name} says hello`);
 }
 
-add(5, 10, '20');
-
-// no required to give return type
-const minus = (a: number, b: number): number => {
-
-    return a+b;
-}
-
-let result = minus(10, 7);
