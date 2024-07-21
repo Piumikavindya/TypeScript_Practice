@@ -9,3 +9,7 @@ This repository contains the materials and code samples from my TypeScript pract
 - lesson-4: Arrays and Objects
 - lesson-5: Explicit Types
 - lesson-6: Dynamic Types (any)
+- lesson-7: Better Work Flow
+- lesson-8: Functions Basicsn
+- lesson-9: Type Aliasses
+- lesson-10: Function Signatures
