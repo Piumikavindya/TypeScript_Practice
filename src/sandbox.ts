@@ -1,17 +1,17 @@
-type StringOrNum = String | Number;
-// we can use this insted of String | Number
-type objWithName = { name: String, uid: StringOrNum };
-// like this we can define and use later
+// example 1
+let greet: (a: string, b: string) => void;
 
-const logDetails = (uid: String | Number, item: String) => {
-    console.log(`${item} has a uid of ${uid}`);
+greet = (name: string, greeting: string) => {
+        console.log(`${name} says ${greeting}`);}
+
+
+// example 2
+let calc: (a: number, b: number, c: string) => number;
+
+calc = (numOne: number, numTwo: number, action: string) => {
+    if (action === 'add') {
+        return numOne + numTwo;
+    } else {
+        return numOne - numTwo;
+    } 
 }
-
-const greet = (user: { name: String, uid: StringOrNum }) => {
-    console.log(`${user.name} says hello`);
-}
-
-const greetagain = (user: objWithName) => {
-    console.log(`${user.name} says hello`);
-}
-
