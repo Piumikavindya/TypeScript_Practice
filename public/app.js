@@ -1,8 +1,12 @@
 "use strict";
-// const anchor = document.querySelector('a');
-// if(anchor){
-//     console.log(anchor.href); // http://localhost:1234/
-// }
+// Classes
+class Invoice {
+    constructor(c, d, a) {
+        this.client = c;
+        this.details = d;
+        this.amount = a;
+    }
+}
 const form = document.querySelector('.new-item-form');
 // console.log(form.children);
 // inputs
