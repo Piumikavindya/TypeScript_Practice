@@ -11,6 +11,9 @@ class Invoice{
         this.amount = a;
     }
     
+    format(){
+        return `${this.client} owes Rs${this.amount} for ${this.details}`;
+    }
 }
 
 const form = document.querySelector('.new-item-form') as HTMLFormElement;
