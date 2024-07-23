@@ -1,29 +1,9 @@
-//  Public, Private & ReadOnly
 
+import {Invoice} from './Models/Invoice.js';
+ 
  // public : we can read and change values outside of the class
  // private : we can't read and change values outside of the class only inside the class
  // readonly : we can read values outside of the class but we can't change values outside of the class
-
-class Invoice{
-    // variables  (thesr varaibles are by default public)
-    
-//    readonly client: string;
-//    private details: string;
-//    public amount: number;
-
-    // constructor
-    //without making varible separatly we can pass variables in constructor as well
-    constructor(
-    readonly client: string,
-    private details: string,
-    public amount: number,
-    ){}
-    
-    // Method
-    format(){
-        return `${this.client} owes Rs${this.amount} for ${this.details}`;
-    }
-}
 
 // create instance/object of Invoice class and pass the parameters
 const invOne = new Invoice('piumi', 'work on the website', 250);
