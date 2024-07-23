@@ -15,3 +15,4 @@ This repository contains the materials and code samples from my TypeScript pract
 - lesson-10: Function Signatures
 - lesson-11: The DOM and Type Casting. (add event hander get the inputs)
 - lesson-12: Classes (Constructor, Methods, Objects)
+- lesson-13: Private, Public, Readonly
