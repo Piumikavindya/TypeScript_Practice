@@ -1,17 +1,23 @@
-// Classes
+//  Public, Private & ReadOnly
+
+ // public : we can read and change values outside of the class
+ // private : we can't read and change values outside of the class only inside the class
+ // readonly : we can read values outside of the class but we can't change values outside of the class
 
 class Invoice{
     // variables  (thesr varaibles are by default public)
-    client: string;
-    details: string;
-    amount: number;
+    
+//    readonly client: string;
+//    private details: string;
+//    public amount: number;
 
     // constructor
-    constructor(c: string, d: string, a:number){
-        this.client = c;
-        this.details = d;
-        this.amount = a;
-    }
+    //without making varible separatly we can pass variables in constructor as well
+    constructor(
+    readonly client: string,
+    private details: string,
+    public amount: number,
+    ){}
     
     // Method
     format(){
@@ -34,10 +40,15 @@ console.log(invOne, invTwo);
 // we can change the properties of the class as now we created objects of the class
 // we can change the properties of the class as variables are public by default
 
-invOne.client = 'youshi';
-invTwo.amount = 400;
+// invOne.client = 'youshi';
+// invTwo.amount = 400;
 
 console.log(invOne, invTwo);
+
+invoices.forEach(inv =>{
+    console.log(inv.client, inv.amount, inv.format());
+})
+
 // ******************************************************
 
 const form = document.querySelector('.new-item-form') as HTMLFormElement;
