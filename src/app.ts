@@ -1,7 +1,7 @@
 // Classes
 
 class Invoice{
-    // variables
+    // variables  (thesr varaibles are by default public)
     client: string;
     details: string;
     amount: number;
@@ -23,8 +23,22 @@ class Invoice{
 const invOne = new Invoice('piumi', 'work on the website', 250);
 const invTwo = new Invoice('Kavindya', 'work on the website', 200);
 
+// console.log(invOne, invTwo);
+
+let invoices: Invoice[] = [];
+invoices.push(invOne);
+invoices.push(invTwo);
+
 console.log(invOne, invTwo);
 
+// we can change the properties of the class as now we created objects of the class
+// we can change the properties of the class as variables are public by default
+
+invOne.client = 'youshi';
+invTwo.amount = 400;
+
+console.log(invOne, invTwo);
+// ******************************************************
 
 const form = document.querySelector('.new-item-form') as HTMLFormElement;
 

@@ -15,7 +15,17 @@ class Invoice {
 // create instance/object of Invoice class and pass the parameters
 const invOne = new Invoice('piumi', 'work on the website', 250);
 const invTwo = new Invoice('Kavindya', 'work on the website', 200);
+// console.log(invOne, invTwo);
+let invoices = [];
+invoices.push(invOne);
+invoices.push(invTwo);
 console.log(invOne, invTwo);
+// we can change the properties of the class as now we created objects of the class
+// we can change the properties of the class as variables are public by default
+invOne.client = 'youshi';
+invTwo.amount = 400;
+console.log(invOne, invTwo);
+// ******************************************************
 const form = document.querySelector('.new-item-form');
 // console.log(form.children);
 // inputs
